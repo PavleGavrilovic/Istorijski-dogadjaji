@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register/Log In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/earthFav.png" type="image/x-icon">
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div id="naslov">
+            <div id="hamburgerIcon">&#9776;</div>
+            <div id="h1Naslov"><h1>ISTORIJSKI DOGADJAJI</h1></div>
+        </div>
+
+        <div id="navbar">
+            <a href="index.html" class="aNav">Pocetna</a>
+            <a href="biblioteka.html" class="aNav">Moja biblioteka</a>
+            <a href="about.html" class="aNav">About</a>
+            <a href="kontakt.html" class="aNav">Kontakt</a>
+        </div>
+    </header>
+
+    <main>
+        <div id="wrapperRL">
+            
+        <div id="buttonRLdiv">
+            <h1>Vec imate nalog?</h1>
+            <button class="dugmeRL" id="buttonYes">DA</button>
+            <button class="dugmeRL" id="buttonNo">NE</button>
+        </div>
+
+        <div id="registerForm">
+            <label for="user">Korisnicko ime:</label>
+            <input type="text" class="inputRegLog" id="user">
+            <label for="password">Lozinka:</label>
+            <input type="text" class="inputRegLog" id="password">
+            <label for="confirm">Potvrda lozinke:</label>
+            <input type="text" class="inputRegLog" id="confirm">
+            <button id="buttonReg">Register</button>
+        </div>
+
+        <div id="loginForm">
+            <label for="userL">Korisnicko ime:</label>
+            <input type="text" class="inputRegLog" id="userL">
+            <label for="passwordL">Lozinka:</label>
+            <input type="text" class="inputRegLog" id="passwordL">
+            <button id="buttonLog">Log In</button>
+        </div>
+
+        <button id="btnNazad">Nazad</button>
+
+        </div>
+        
+    </main>
+    <script src="JS/main.js"></script>
+</body>
+</html>
