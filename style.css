@@ -1,0 +1,484 @@
+@font-face{
+    font-family: Humanistic Medium;
+    src: url(assets/fonts/FONT2/Humanistic.ttf);
+}
+
+*{
+    font-family: Humanistic Medium;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: rgba(198,182,159,255);;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* STILIZOVANJE HEADERA, FOOTERA I NAVBARA............................................................ */
+
+header{
+    border-bottom: 2px solid rgb(135,124,107);
+}
+
+#headerIndex{
+    background-image: url(assets/images/HEADER3.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    width: 100%;
+    height: 737px;
+    text-align: center;
+}
+
+#naslov{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    /* padding: 5px; OVO JE STVARALO HORIZONTALNI SCROLL BAR */
+}
+
+#hamburgerIcon{
+    margin-left: 10px;
+    font-size: 30px;
+    color: rgba(198,182,159,255);
+}
+
+#hamburgerIcon:hover{
+    cursor: pointer;
+}
+
+#h1Naslov{
+    margin-left: 120px;
+    color: rgba(198,182,159,255);
+}
+
+#navbar{
+    background-color: rgb(31, 25, 25);
+    width: 100%;
+    border-top: 2px solid rgba(198,182,159,255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.aNav{
+    color: rgba(198,182,159,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    background-color:rgb(31, 25, 25);
+    width: 100%;
+    height: 65px;
+    border: none;
+}
+
+
+
+.aNav:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: black;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(135,124,107);
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+}
+
+/* FEATURED PARAGRAF...................................................................... */
+
+#featuredWrapper{
+    color: rgba(198,182,159,255);
+    background-color: rgb(31, 25, 25);
+    border: 5px solid rgb(135,124,107);
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    width: 400px;
+}
+
+#featuredWrapper:hover{
+    cursor: pointer;
+    transition: 00.5s;
+    font-size: 20px;
+}
+
+
+/* Skracivanje paragrafa ukoliko je predugacak za svoj container */
+#featuredParagraf{
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+/* SEARCH DEO.............................. */
+
+#searchWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#search{
+    font-size: 20px;
+    height: 40px;
+    width: 400px;
+    border: 4px solid rgb(135,124,107);
+    background-color: rgb(31, 25, 25);
+    border-radius: 25px;
+    color: rgba(198,182,159,255);
+}
+
+#search:focus{
+    outline: none;
+}
+
+#btnSearch{
+    color: rgba(198,182,159,255);
+    font-size: 30px;
+    background-color: rgb(31, 25, 25);
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px; 
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+      
+}
+
+#btnSearch:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: black;
+}
+/* TRI RANDOM PARAGRAFA..................................................................... */
+
+#randomWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.random{
+    color: rgba(198,182,159,255);
+    background-color: rgb(31, 25, 25);
+    width: 400px;
+    height: 350px;
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px;
+    margin: 5px;
+    padding: 10px;
+    
+}
+
+.random:hover{
+    cursor: pointer;
+}
+
+/* Skracivanje paragrafa ukoliko je predugacak za svoj container */
+.paragraf{
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}    
+
+/* SLIKE U RANDOM PARAGRAFIMA....................................................... */
+
+.randomSlika{
+    width: 400px;
+    height: 200px;
+    
+}
+
+.randomSlika:hover{
+    transition: 0.5s;
+    height: 210px;
+}
+
+/* OPTIONS SEKCIJA................................................. */
+
+#optionsWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgb(31, 25, 25);
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px;
+    margin-top: 50px;
+    width: 400px;
+    height: 100px;
+}
+
+#optionsWrapper:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 30px;
+    background-color: black;
+}
+
+/* BACK TO TOP DUGME........................................... */
+
+#topButton{
+    margin-top: 40px;
+}
+
+#topButton a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: sticky; */
+    margin-bottom: 30px;
+    margin-left: 400px;
+    background-color: rgb(31, 25, 25);
+    border: 2px solid rgb(135,124,107);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    color: rgb(135,124,107);
+}
+
+/* BIBLIOTEKA STRANA STILIZOVANJE...................................................................................................... */
+
+/* ABOUT STRANA STILIZOVANJE...................................................................................................... */
+
+#wrapperAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 15px;
+    padding: 10px;
+    background-color: rgb(31, 25, 25);
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px;
+    margin-top: 50px;
+  
+}
+
+#slikaAbout{
+    margin: 20px;
+    width: 100px;
+    height: 200px;
+}
+
+/* KONTAKT STRANA STILIZOVANJE......................................................................................................... */
+
+#kontaktNaslov{
+    text-align: center;
+}
+
+fieldset{
+    background-color: rgb(31, 25, 25);
+    border: 2px solid rgb(135,124,107);
+    height: 500px;
+    margin: 20px;
+}
+
+#kontaktForma{
+    text-align: center;
+    margin: 10px;
+    
+}
+
+#inputText{
+    margin-top: 60px;
+    width: 400px;
+    height: 250px;
+    font-size: 15px;
+}
+
+#kontaktDugme{
+    color: rgba(198,182,159,255);
+    font-size: 30px;
+    background-color: rgb(31, 25, 25);
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px; 
+    margin-top: 80px;
+    width: 200px;
+    height: 60px;
+}
+
+#kontaktDugme:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: black;
+}
+
+#slikaKontaktDiv{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#slikaKontakt{
+    width: 90px;
+    height: 210px;
+    margin-bottom: 5px;
+}
+
+#slikaKontaktDiv p{
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+/* REGISTER/LOGIN STRANA STILIZOVANJE......................................................................................................... */
+
+
+
+#wrapperRL{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#buttonRLdiv h1{
+    text-align: center;
+}
+
+.dugmeRL{
+    color: rgba(198,182,159,255);
+    font-size: 30px;
+    background-color: rgb(31, 25, 25);
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px; 
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+}
+
+.dugmeRL:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: black;
+}
+
+#registerForm{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgb(31, 25, 25);
+    border: 2px solid rgb(135,124,107);
+    border-radius: 25px;
+    width: 400px;
+    height: 300px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.inputRegLog{
+    font-size: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 25px;
+}
+
+#buttonReg{
+    color: rgba(198,182,159,255);
+    font-size: 30px;
+    background-color: rgb(31, 25, 25);
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px; 
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+}
+
+#buttonReg:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: black;
+}
+
+/* LOGIN FORMA................................................. */
+
+
+#loginForm{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgb(31, 25, 25);
+    border: 2px solid rgb(135,124,107);
+    border-radius: 25px;
+    width: 400px;
+    height: 300px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#buttonLog{
+    color: rgba(198,182,159,255);
+    font-size: 30px;
+    background-color: rgb(31, 25, 25);
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px; 
+    margin-top: 40px;
+    width: 200px;
+    height: 40px;
+}
+
+#buttonLog:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: black;
+}
+
+#btnNazad{
+    color: rgba(198,182,159,255);
+    font-size: 30px;
+    background-color: rgb(31, 25, 25);
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px; 
+    margin-top: 40px;
+    width: 200px;
+    height: 40px;
+}
+
+#btnNazad:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: black;
+}
