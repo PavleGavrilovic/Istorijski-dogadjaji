@@ -1,4 +1,4 @@
-const data=[
+data=[
     {
         id:1,
         title:"title1",
