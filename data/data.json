@@ -1,33 +1,33 @@
 [
     {
         "id":1,
-        "title":"Paris Peace Conference",
+        "title":"Paris Peace Conference (1919-1920)",
         "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/William_Orpen_%E2%80%93_The_Signing_of_Peace_in_the_Hall_of_Mirrors%2C_Versailles_1919%2C_Ausschnitt.jpg/1920px-William_Orpen_%E2%80%93_The_Signing_of_Peace_in_the_Hall_of_Mirrors%2C_Versailles_1919%2C_Ausschnitt.jpg",
         "text":"The Paris Peace Conference was the formal meeting in 1919 and 1920 of the victorious Allies after the end of World War I to set the peace terms for the defeated Central Powers. Dominated by the leaders of Britain, France, the United States and Italy, it resulted in five controversial treaties that rearranged the map of Europe and parts of Asia, Africa and the Pacific Islands and imposed financial penalties. Germany and the other losing nations had no voice which gave rise to political resentments that lasted for decades."
     },
     {
         "id":2,
-        "title":"title2",
-        "image":"image2",
-        "text":"text2"
+        "title":"Battle of Gettysburg (1863)",
+        "image":"https://cdn.britannica.com/13/913-050-BF67B227/troops-Confederate-objective-progress-mark-Cemetery-Ridge.jpg",
+        "text":"The Battle of Gettysburg was fought July 1–3, 1863, in and around the town of Gettysburg, Pennsylvania, by Union and Confederate forces during the American Civil War. The battle involved the largest number of casualties of the entire war and is often described as the war's turning point due to the Union's decisive victory and concurrence with the Siege of Vicksburg. Union Maj. Gen. George Meade's Army of the Potomac defeated attacks by Confederate Gen. Robert E. Lee's Army of Northern Virginia, halting Lee's invasion of the North."
     },
     {
         "id":3,
-        "title":"title3",
-        "image":"image3",
-        "text":"text3"
+        "title":"Tennis Court Oath (1789)",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Le_Serment_du_Jeu_de_paume.jpg/1280px-Le_Serment_du_Jeu_de_paume.jpg",
+        "text":"On 20 June 1789, the members of the French Third Estate took the Tennis Court Oath (French: Serment du Jeu de Paume) in the tennis court which had been built in 1686 for the use of the Versailles palace. The vote was not to separate and to reassemble wherever necessary until the Constitution of the kingdom is established. It was a pivotal event in the French Revolution."
     },
     {
         "id":4,
-        "title":"title4",
-        "image":"image4",
-        "text":"text4"
+        "title":"Battle of Sekigahara (1600)",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Sekigaharascreen.jpg/1920px-Sekigaharascreen.jpg",
+        "text":"The Battle of Sekigahara was a decisive battle on October 21, 1600 in what is now Gifu prefecture, Japan, at the end of the Sengoku period. This battle was fought by the forces of Tokugawa Ieyasu against a coalition of Toyotomi loyalist clans, several of which defected before or during the battle, leading to a Tokugawa victory. The Battle of Sekigahara was the largest and most important battle of Japanese feudal history, and led to the establishment of the Tokugawa shogunate."
     },
     {
         "id":5,
-        "title":"title5",
-        "image":"image5",
-        "text":"text5"
+        "title":"Discovery of America (1492)",
+        "image":"https://libcom.org/files/images/history/Indians.jpg",
+        "text":"On August 3, 1492, the Italian navigator Christopher Columbus set sail from the Port of Palos de la Frontera in the Province of Huelva, from the newly los Reyes Católicos coordinated Kingdoms of Castile and Aragon, in present-day Spain, financed by Queen Isabella I of Castille. Columbus's Letter on the First Voyage of his discovery of the Bahamas, Cuba, and Hispaniola spread the news across Europe quickly. Columbus rediscovered and explored much of the Lesser Antilles in his second voyage then discovered both Trinidad and Tobago on his third voyage whilst skirting the northern South American coast. His fourth voyage was spent scanning the Central American coast. The Voyages of Christopher Columbus opened the New World."
     }
 ]
 
