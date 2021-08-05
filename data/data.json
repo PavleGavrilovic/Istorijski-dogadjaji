@@ -28,6 +28,36 @@
         "title":"Discovery of America (1492)",
         "image":"https://libcom.org/files/images/history/Indians.jpg",
         "text":"On August 3, 1492, the Italian navigator Christopher Columbus set sail from the Port of Palos de la Frontera in the Province of Huelva, from the newly los Reyes Católicos coordinated Kingdoms of Castile and Aragon, in present-day Spain, financed by Queen Isabella I of Castille. Columbus's Letter on the First Voyage of his discovery of the Bahamas, Cuba, and Hispaniola spread the news across Europe quickly. Columbus rediscovered and explored much of the Lesser Antilles in his second voyage then discovered both Trinidad and Tobago on his third voyage whilst skirting the northern South American coast. His fourth voyage was spent scanning the Central American coast. The Voyages of Christopher Columbus opened the New World."
-    }
+    },
+    {
+        "id":6,
+        "title":"Martin Luther's 95 Theses (1517)",
+        "image":"https://credomag.com/wp-content/uploads/2020/10/1711_Marty_Reformer_0.jpg",
+        "text":"The Ninety-five Theses or Disputation on the Power and Efficacy of Indulgences is a list of propositions for an academic disputation written in 1517 by Martin Luther, professor of moral theology at the University of Wittenberg, Germany. Retrospectively considered to signal the birth of Protestantism, this document advances Luther's positions against what he saw as the abuse of the practice of clergy selling plenary indulgences, which were certificates believed to reduce the temporal punishment in purgatory for sins committed by the purchasers or their loved ones."
+    },
+    {
+        "id":7,
+        "title":"Viking Raid on Lindisfarne (793)",
+        "image":"https://i.pinimg.com/originals/9a/b0/d4/9ab0d45f1694780929f4a83429593996.jpg",
+        "text":"In 793, a Viking raid on Lindisfarne caused much consternation throughout the Christian west, and is now often taken as the beginning of the Viking Age. There had been some other Viking raids, but according to English Heritage this one was particularly significant, because it attacked the sacred heart of the Northumbrian kingdom, desecrating the very place where the Christian religion began in our nation. During the attack many of the monks were killed, or captured and enslaved."
+    },
+    {
+        "id":8,
+        "title":"Assassination of Julius Caesar (44 BC)",
+        "image":"https://images.immediate.co.uk/production/volatile/sites/7/2021/02/GettyImages_168966912-2735b16-e1614095414474.jpg?quality=90&resize=620,413",
+        "text":"Julius Caesar, the Roman dictator, was assassinated by a group of senators on the Ides of March (15 March) of 44 BC during a meeting of the Senate at the Theatre of Pompey in Rome. The senators stabbed Caesar 23 times. The senators claimed to be acting over fears that Caesar's unprecedented concentration of power during his dictatorship was undermining the Roman Republic, and presented the deed as an act of tyrannicide. At least 60 senators were party to the conspiracy, led by Marcus Junius Brutus, Gaius Cassius Longinus and Decimus Junius Brutus. Despite the death of Caesar, the conspirators were unable to restore the institutions of the Republic. The ramifications of the assassination led to the Liberators' civil war and ultimately to the Principate period of the Roman Empire."
+    },
+    {
+        "id":9,
+        "title":"Gunpowder Plot (1605)",
+        "image":"https://www.historic-uk.com/wp-content/uploads/2017/04/guy-fawkes.jpg",
+        "text":"The Gunpowder Plot of 1605, in earlier centuries often called the Gunpowder Treason Plot or the Jesuit Treason, was a failed assassination attempt against King James I by a group of provincial English Catholics led by Robert Catesby who sought to restore the Catholic monarchy from the Church of England after decades of intolerance against Catholics. The most famous of the conspirators was Guy Fawkes, who was in charge of the gunpowder that was to be used in the plot."
+    },
+    {
+        "id":10,
+        "title":"Battle of Marathon (490 BC)",
+        "image":"https://cdn.britannica.com/88/197788-050-AC2FEC1D/Battle-of-Marathon-relief-Roman-sarcophagus.jpg",
+        "text":"The Battle of Marathon took place in 490 BC during the first Persian invasion of Greece. It was fought between the citizens of Athens, aided by Plataea, and a Persian force commanded by Datis and Artaphernes. The battle was the culmination of the first attempt by Persia, under King Darius I, to subjugate Greece. The Greek army inflicted a crushing defeat on the more numerous Persians, marking a turning point in the Greco-Persian Wars."
+    },
 ]
 
