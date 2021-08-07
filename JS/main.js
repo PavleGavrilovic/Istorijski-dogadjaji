@@ -30,6 +30,7 @@ function displayFeaturedData(data){
                     <p id="featuredParagraf">${data[i].text}</p>
             </div>
             `;
+            break;
         }else{
             var text=`
             <div id="featuredWrapper">
