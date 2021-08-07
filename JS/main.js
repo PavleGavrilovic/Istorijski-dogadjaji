@@ -12,6 +12,36 @@ fetch("https://raw.githubusercontent.com/PavleGavrilovic/Istorijski-dogadjaji/ma
 
 // POPUNJAVANJE TRI RANDOM CLANKA I FEATURED CLANKA DOHVATANJEM IZ JSON FAJLA.....................
 
+function displayFeaturedData(data){
+    let today=new Date();
+    let todayString=today.toString();
+    let todayStringSplit=todayString.split(" ");
+    let day=todayStringSplit[1] + " " + todayStringSplit[2];
+   
+
+    var text;
+    
+    for(let i=0;i<data.length;i++){
+        
+        if(day==data[i].date){
+            var text=`
+            <div id="featuredWrapper">
+                    <h2 id="featuredHeader">${data[i].title} (on this day)</h2>
+                    <p id="featuredParagraf">${data[i].text}</p>
+            </div>
+            `;
+        }else{
+            var text=`
+            <div id="featuredWrapper">
+                    <h2 id="featuredHeader" style="text-align:center">NO EVENT ON THIS DAY</h2>
+            </div>
+            `;
+        }
+        
+    }
+    return text;
+}
+
 function displayRandomData(data){
 
     let shuffleData=data.sort(()=>0.5-Math.random());
@@ -37,31 +67,6 @@ function displayRandomData(data){
     `;
     return text;
 };
-
-function displayFeaturedData(data){
-    let shuffleData=data.sort(()=>0.5-Math.random());
-
-    let text=`
-    <div id="featuredWrapper">
-            <h2 id="featuredHeader">${shuffleData[0].title} (on this day)</h2>
-            <p id="featuredParagraf">${shuffleData[0].text}</p>
-    </div>
-    `;
-    return text;
-}
-
-// OVO ZAKOMENTARISANO CE MOZDA BITI POTREBNO KASNIJE!!!
-// var danasnjiDan=new Date();
-// var danString=danasnjiDan.toString();
-// var novi=danString.split(" ");
-// var spojeni=novi[1] + " " + novi[2];
-// console.log(spojeni);
-
-// var dan="Aug 05";
-
-// if(dan==spojeni){
-//     console.log("Jesu jednaki")
-// }
 
 // HAMBURGER IKONA PREKO JQUERY...............................
 
