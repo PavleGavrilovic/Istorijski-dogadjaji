@@ -158,7 +158,73 @@
         "date":"May 05",
         "image":"https://i.guim.co.uk/img/media/895be3533e2a5fd074692788383df1cbc622e7db/0_107_8192_4918/master/8192.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=fd4c8749bbee321546cfd9184e65245b",
         "text":"During the last few years of his life, Napoleon confined himself for months on end in his damp, mold-infested and wretched habitation of Longwood. In February 1821, Napoleon's health began to deteriorate rapidly, and he reconciled with the Catholic Church. He died on 5 May 1821 at Longwood House at age 51, after making his last confession, Extreme Unction and Viaticum in the presence of Father Ange Vignali from his deathbed. His last words were, France, l'armée, tête d'armée, Joséphine (France, the army, head of the army, Joséphine)."
+    },
+    {
+        "id":21,
+        "title":"Siege of La Rochelle (1627-1628)",
+        "year":1627,
+        "date":"Sep 10",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Siege_of_La_Rochelle_1881_Henri_Motte_1846_1922.jpg/1280px-Siege_of_La_Rochelle_1881_Henri_Motte_1846_1922.jpg",
+        "text":"The siege of La Rochelle was a result of a war between the French royal forces of Louis XIII of France and the Huguenots of La Rochelle in 1627–28. The siege marked the height of the struggle between the Catholics and the Protestants in France, and ended with a complete victory for King Louis XIII and the Catholics. Residents of La Rochelle had resisted for 14 months, under the leadership of the mayor Jean Guitton and with gradually diminishing help from England. During the siege, the population of La Rochelle decreased from 27,000 to 5,000 due to casualties, famine, and disease. Surrender was unconditional. By the terms of the Peace of Alais, the Huguenots lost their territorial, political, and military rights, but retained the religious freedom granted by the Edict of Nantes."
+    },
+    {
+        "id":22,
+        "title":"Parlementary Fronde (1648–1649)",
+        "year":1648,
+        "date":"Aug 20",
+        "image":"https://www.timewisetraveller.co.uk/wpimages/wpc69c349e_1a.png",
+        "text":"In May 1648 a tax levied on judicial officers of the Parlement of Paris provoked not merely a refusal to pay but also a condemnation of earlier financial edicts and a demand for the acceptance of a scheme of constitutional reforms framed by a united committee of the parlement (the Chambre Saint-Louis), composed of members of all the sovereign courts of Paris. The military record of the Parlementary Fronde is almost blank. In August 1648, feeling strengthened by the news of the Louis II de Bourbon, Prince de Condé's victory at Lens (20 August 1648), Mazarin suddenly arrested the leaders of the parlement, whereupon Paris broke into insurrection and barricaded the streets. The two warring parties signed the Peace of Rueil (11 March 1649) after little blood had been shed."
+    },
+    {
+        "id":23,
+        "title":" Fronde of the Princes (1650–1653)",
+        "year":1650,
+        "date":"Jan 14",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/2/22/Episode_of_the_Fronde_at_the_Faubourg_Saint-Antoine_by_the_Walls_of_the_Bastille.png",
+        "text":"The peace of Rueil lasted until the end of 1649. The princes, received at court once more, renewed their intrigues against Mazarin. On 14 January 1650, Cardinal Mazarin, having come to an understanding with Monsieur Gondi and Madame de Chevreuse, suddenly arrested Condé, Conti, and Longueville. A few more maneuvers, and the royal army was able to hem in the Frondeurs in the Faubourg St. Antoine (2 July 1652) with their backs to the closed gates of Paris. The royalists attacked all along the line and won a signal victory in spite of the knightly prowess of the prince and his great lords. Mazarin returned unopposed in February 1653."
+    },
+    {
+        "id":24,
+        "title":"Execution of Charles I (1649)",
+        "year":1649,
+        "date":"Jan 30",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The_execution_of_King_Charles_I_from_NPG.jpg/1024px-The_execution_of_King_Charles_I_from_NPG.jpg",
+        "text":"Charles's beheading was scheduled for Tuesday, 30 January 1649. Two of his children remained in England under the control of the Parliamentarians: Elizabeth and Henry. They were permitted to visit him on 29 January, and he bade them a tearful farewell. At about 2:00 p.m., Charles put his head on the block after saying a prayer and signalled the executioner when he was ready by stretching out his hands; he was then beheaded with one clean stroke."
+    },{
+        "id":25,
+        "title":"The Great Fire of London extinguished(1666)",
+        "year":1666,
+        "date":"Sep 6",
+        "image":"https://thumbs-prod.si-cdn.com/CbTwBlvm2ZBo8TaR1aDBeBKQebA=/fit-in/1600x0/https://public-media.si-cdn.com/filer/87/38/87384ed1-094b-4f3b-909d-ceb66620d741/oil_painting_of_the_great_fire_of_london_seen_from_newgate_c_museum_of_london.jpg",
+        "text":"The Great Fire of London was a major conflagration that swept through the central parts of London from Sunday, 2 September to Thursday, 6 September 1666. The fire gutted the medieval City of London inside the old Roman city wall. It threatened but did not reach the City of Westminster (today's West End), Charles II's Palace of Whitehall, and most of the suburban slums.  It destroyed 13,200 houses, 87 parish churches, St Paul's Cathedral, and most of the buildings of the City authorities. It is estimated to have destroyed the homes of 70,000 of the City's 80,000 inhabitants."
+    },{
+        "id":26,
+        "title":"Battle of Issus (333 BC)",
+        "year":-333,
+        "date":"Nov 5",
+        "image":"https://www.thoughtco.com/thmb/Ir-HPLytdYSKHfCtF4kaHH_MDqE=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/detail-of-fleeing-persians-from-the-battle-of-issus-roman-mosaic-852340656-5b91b5e846e0fb002594cb3e.jpg",
+        "text":"The Battle of Issus (also Issos) occurred in southern Anatolia, on November 5, 333 BC between the Hellenic League led by Alexander the Great and the Achaemenid Empire, led by Darius III. It was the second great battle of Alexander's conquest of Asia, and the first encounter between Darius III and Alexander the Great. The battle resulted in the Macedonian troops defeating the Persian forces. After the Hellenic League soundly defeated the Persian satraps of Asia Minor (led by Greek mercenary Memnon of Rhodes) at the Battle of the Granicus, Darius took personal command of his army. He gathered reinforcements and proceeded to lead his men in a surprise march behind the Hellenic advance, in order to cut off their line of supply. Alexander was forced to countermarch, and the stage was set for the battle near the mouth of the Pinarus River and the town of Issus."
+    },{
+        "id":27,
+        "title":"Battle of Versinikia (813)",
+        "year":813,
+        "date":"Jun 22",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/813_Krum_razbiva_vizantiizi_IztTrakia.JPG/300px-813_Krum_razbiva_vizantiizi_IztTrakia.JPG",
+        "text":"The Battle of Versinikia was fought in 813 between the Byzantine Empire and the Bulgarian Empire, near the city of Adrianople. Despite being outnumbered 2-to-1, the Bulgarians led by Krum were victorious, resulting in the dethroning of Byzantine leader Michael I Rangabe (811–813) by Leo V the Armenian. The battle was a major success and further strengthened the Bulgarian position after their decisive victory over Nicephorus I two years earlier. In fact, after the battle they de facto took control of the whole of Eastern Thrace (until the Byzantine–Bulgarian Treaty of 815) with the exception of a few castles that remained in Byzantine control. For the first time in Bulgarian history, the way to Constantinople was opened. Unfortunately for them, the great Khan Krum died at the height of the preparation for the final siege of the Byzantine capital on 13 April 814."
+    },{
+        "id":28,
+        "title":"Battle of Agincourt (1415)",
+        "year":1415,
+        "date":"Oct 25",
+        "image":"https://i0.wp.com/bitaboutbritain.com/wp-content/uploads/2016/03/Agincourt.jpg?fit=1018%2C678&ssl=1",
+        "text":"The Battle of Agincourt was an English victory in the Hundred Years' War. It took place on 25 October 1415 (Saint Crispin's Day) near Azincourt, in northern France. The unexpected English victory against the numerically superior French army boosted English morale and prestige, crippled France and started a new period of English dominance in the war. King Henry V of England led his troops into battle and participated in hand-to-hand fighting. King Charles VI of France did not command the French army as he suffered from psychotic illnesses and associated mental incapacity. The French were commanded by Constable Charles d'Albret and various prominent French noblemen of the Armagnac party. This battle is notable for the use of the English longbow in very large numbers, with the English and Welsh archers comprising nearly 80 percent of Henry's army."
+    },{
+        "id":29,
+        "title":"Death of Charlemagne(814)",
+        "year":814,
+        "date":"Jan 28",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Shroud_of_Charlemagne_manufactured_in_Constantinople_814.jpg/1024px-Shroud_of_Charlemagne_manufactured_in_Constantinople_814.jpg",
+        "text":"In 813, Charlemagne called Louis the Pious, king of Aquitaine, his only surviving legitimate son, to his court. There Charlemagne crowned his son as co-emperor and sent him back to Aquitaine. He then spent the autumn hunting before returning to Aachen on 1 November. In January, he fell ill with pleurisy. In deep depression (mostly because many of his plans were not yet realised), he took to his bed on 21 January and as Einhard tells it: He died January twenty-eighth, the seventh day from the time that he took to his bed, at nine o'clock in the morning, after partaking of the Holy Communion, in the seventy-second year of his age and the forty-seventh of his reign. He was buried that same day, in Aachen Cathedral, although the cold weather and the nature of his illness made such a hurried burial unnecessary."
     }
-    
 ]
 
