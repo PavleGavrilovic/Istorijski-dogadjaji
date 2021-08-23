@@ -12,7 +12,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: black;
-    color: rgba(198,182,159,255);;
+    color: rgba(198,182,159,255);
 }
 
 section{
@@ -45,6 +45,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     background-color: black;
     width: 100%;
     height: 50px;
@@ -63,7 +64,26 @@ header{
 
 #h1Naslov{
     margin-left: 120px;
+    margin-right: 5px;
     color: rgba(198,182,159,255);
+}
+
+#desktopNavbar{
+    display: none;
+    /* margin-left: 650px; */
+}
+
+#desktopNavbar a{
+    text-decoration: none;
+    color: rgba(198,182,159,255);
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#desktopNavbar a:hover{
+    transition: 0.5s;
+    color: rgb(135,124,107);
 }
 
 #navbar{
@@ -249,6 +269,10 @@ footer{
     background-color: black;
 }
 
+#optionsWrapper a{
+    color: rgba(198,182,159,255);
+}
+
 /* BACK TO TOP DUGME........................................... */
 
 #topButton{
@@ -268,7 +292,7 @@ footer{
     width: 60px;
     height: 60px;
     font-size: 20px;
-    color: rgb(135,124,107);
+    color: rgba(198,182,159,255);
 }
 
 /* BIBLIOTEKA STRANA STILIZOVANJE...................................................................................................... */
@@ -359,7 +383,11 @@ fieldset{
 
 /* REGISTER/LOGIN STRANA STILIZOVANJE......................................................................................................... */
 
-
+#loginImage{
+    width: 150px;
+    height: 300px;
+    margin-left: 150px;
+}
 
 #wrapperRL{
     display: flex;
@@ -369,9 +397,6 @@ fieldset{
     margin-bottom: 100px;
 }
 
-#buttonRLdiv{
-    margin-top: 100px;
-}
 
 #buttonRLdiv h1{
     text-align: center;
@@ -488,6 +513,136 @@ fieldset{
 }
 
 
+/* EVENTS STRANA..................................................................... */
+
+#eventCrest{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.eventsHeader{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#eventWrapper{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.eventArticle{
+    color: rgba(198,182,159,255);
+    background-color: rgb(31, 25, 25);
+    width: 400px;
+    height: 350px;
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.eventArticle:hover{
+    cursor: pointer;
+}
+
+.colorChange{
+    background-color: #73522c;
+    /* #75401d */
+}
+
+/* DUGME ZA DODAVANJE */
+#btnAdd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgba(198,182,159,255);
+    background-color: rgb(31, 25, 25);
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px;
+    width: 400px;
+    height: 100px;
+}
+
+#btnAdd:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 30px;
+    background-color: black;
+}
+
+/* FILTER DUGMICI.............. */
+
+#filterBtnWrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.filterBtn{
+    margin: 10px;
+    font-size: 20px;
+    color: rgba(198,182,159,255);
+    background-color: rgb(31, 25, 25);
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px;
+    width: 120px;
+    height: 100px;
+}
+
+.filterBtn:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 25px;
+    background-color: black;
+}
+
+
+
+/* LIBRARY STRANA.................................................................. */
+
+#chosenWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnLib{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgba(198,182,159,255);
+    background-color: rgb(31, 25, 25);
+    border: 3px solid rgb(135,124,107);
+    border-radius: 25px;
+    margin-top: 30px;
+    width: 400px;
+    height: 100px;
+}
+
+.btnLib:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 30px;
+    background-color: black;
+}
+
+
+.btnWrapper{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /* MEDIA QUERY ZA DEFSKTOP........................................................ */
 
 @media only screen and (min-width:768px){
@@ -504,6 +659,10 @@ fieldset{
 
     #hamburgerIcon{
         display: none;
+    }
+
+    #desktopNavbar{
+        display: block;
     }
 
     
@@ -561,4 +720,36 @@ fieldset{
         width: 700px;
         resize: none;
     }
+
+    /* EVENTS STRANA.............. */
+
+    #eventWrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #eventCrest{
+        margin-top: 0px;
+    }
+    
+
+    /* LIBRARY STRANA............... */
+
+    #chosenWrapper{
+        margin-top: 50px;
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .btnWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
 }
