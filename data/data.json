@@ -192,7 +192,7 @@
         "text":"Charles's beheading was scheduled for Tuesday, 30 January 1649. Two of his children remained in England under the control of the Parliamentarians: Elizabeth and Henry. They were permitted to visit him on 29 January, and he bade them a tearful farewell. At about 2:00 p.m., Charles put his head on the block after saying a prayer and signalled the executioner when he was ready by stretching out his hands; he was then beheaded with one clean stroke."
     },{
         "id":25,
-        "title":"The Great Fire of London extinguished(1666)",
+        "title":"The Great Fire of London extinguished (1666)",
         "year":1666,
         "date":"Sep 6",
         "image":"https://thumbs-prod.si-cdn.com/CbTwBlvm2ZBo8TaR1aDBeBKQebA=/fit-in/1600x0/https://public-media.si-cdn.com/filer/87/38/87384ed1-094b-4f3b-909d-ceb66620d741/oil_painting_of_the_great_fire_of_london_seen_from_newgate_c_museum_of_london.jpg",
@@ -220,11 +220,18 @@
         "text":"The Battle of Agincourt was an English victory in the Hundred Years' War. It took place on 25 October 1415 (Saint Crispin's Day) near Azincourt, in northern France. The unexpected English victory against the numerically superior French army boosted English morale and prestige, crippled France and started a new period of English dominance in the war. King Henry V of England led his troops into battle and participated in hand-to-hand fighting. King Charles VI of France did not command the French army as he suffered from psychotic illnesses and associated mental incapacity. The French were commanded by Constable Charles d'Albret and various prominent French noblemen of the Armagnac party. This battle is notable for the use of the English longbow in very large numbers, with the English and Welsh archers comprising nearly 80 percent of Henry's army."
     },{
         "id":29,
-        "title":"Death of Charlemagne(814)",
+        "title":"Death of Charlemagne (814)",
         "year":814,
         "date":"Jan 28",
         "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Shroud_of_Charlemagne_manufactured_in_Constantinople_814.jpg/1024px-Shroud_of_Charlemagne_manufactured_in_Constantinople_814.jpg",
         "text":"In 813, Charlemagne called Louis the Pious, king of Aquitaine, his only surviving legitimate son, to his court. There Charlemagne crowned his son as co-emperor and sent him back to Aquitaine. He then spent the autumn hunting before returning to Aachen on 1 November. In January, he fell ill with pleurisy. In deep depression (mostly because many of his plans were not yet realised), he took to his bed on 21 January and as Einhard tells it: He died January twenty-eighth, the seventh day from the time that he took to his bed, at nine o'clock in the morning, after partaking of the Holy Communion, in the seventy-second year of his age and the forty-seventh of his reign. He was buried that same day, in Aachen Cathedral, although the cold weather and the nature of his illness made such a hurried burial unnecessary."
-    }
+    },
+    {
+        "id":30,
+        "title":"Assyrian Invasion of Egypt (667 BC)",
+        "year"-667,
+        "date":"-".
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Ashurbanipal_II%2C_detail_of_a_lion-hunt_scene_from_Nineveh%2C_7th_century_BC%2C_the_British_Museum.jpg/375px-Ashurbanipal_II%2C_detail_of_a_lion-hunt_scene_from_Nineveh%2C_7th_century_BC%2C_the_British_Museum.jpg",
+        "text":"Ashurbanipal succeeded his father Esarhaddon to the throne. He continued to campaign in and to dominate Egypt, when not distracted by having to deal with pressures from the Medes to the east, and Cimmerians and Scythians to the north of Assyria. He installed a native Egyptian Pharaoh, Necho I, as a vassal king in 664 BCE. However, after Gyges of Lydia's appeal for Assyrian help against the Cimmerians was rejected, Lydian mercenaries were sent to Psammetichus. By 652 BCE, this vassal king was able to declare outright independence from Assyria with impunity, particularly as Ashurbanipal's older brother, Shamash-shum-ukin of Babylon, became infused with Babylonian nationalism, and began a major civil war in that year. However, the new dynasty in Egypt wisely maintained friendly relations with Assyria."
 ]
 
