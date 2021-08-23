@@ -10,20 +10,50 @@
     <script src="JS/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <a id="sidro"></a>
     <header>
         <div id="naslov">
             <div id="hamburgerIcon">&#9776;</div>
-            <div id="h1Naslov"><h1>ISTORIJSKI DOGADJAJI</h1></div>
+            <div id="h1Naslov"><h1>HISTORICAL EVENTS</h1></div>
+            <span id="desktopNavbar">
+                <a href="index.html">Home Page</a>
+                <a href="events.html" >Events</a>
+                <a href="login.html" >Log In</a>
+                <a href="about.html" >About</a>
+                <a href="kontakt.html" >Contact</a>
+            </span>
+                
         </div>
 
         <div id="navbar">
-            <a href="index.html" class="aNav">Pocetna</a>
+            <a href="index.html" class="aNav">Home Page</a>
+            <a href="events.html" class="aNav">Events</a>
             <a href="login.html" class="aNav">Log In</a>
             <a href="about.html" class="aNav">About</a>
-            <a href="kontakt.html" class="aNav">Kontakt</a>
+            <a href="kontakt.html" class="aNav">Contact</a>
         </div>
     </header>
 
+    <main>
+        <h1 class="eventsHeader">My Library</h1>
+        <div id="chosenWrapper"></div>
+        <div class="btnWrapper">
+            <button id="btnRemove" class="btnLib">Remove from Library</button>
+            <button id="btnMore" class="btnLib">Add to Library</button>
+        </div>
+
+        <div id="topButton">
+            <a href="#sidro">
+                Top
+            </a>
+        </div>
+        
+    </main>
+
+    <footer>Copyright and stuff</footer>
+
     <script src="JS/main.js"></script>
+    
+    <script src="JS/library.js"></script>
 </body>
 </html>
