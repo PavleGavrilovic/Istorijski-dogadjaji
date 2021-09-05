@@ -1,755 +1,848 @@
-@font-face{
-    font-family: Humanistic Medium;
-    src: url(assets/fonts/FONT2/Humanistic.ttf);
+@font-face {
+  font-family: Humanistic Medium;
+  src: url(assets/fonts/FONT2/Humanistic.ttf);
 }
 
-*{
-    font-family: Humanistic Medium;
+* {
+  font-family: Humanistic Medium;
+}
+
+html{
+  overflow: hidden;
 }
 
 body{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    background-color: black;
-    color: rgba(198,182,159,255);
+  overflow: hidden;
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: rgba(198, 182, 159, 255);
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+}
+
+
+section h2{
+  text-align: center;
+}
+
+
+
+/* SPINNER................................................ */
+
+#spinnerWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: rgba(198, 182, 159, 255);
+}
+
+#spinner{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border: 12px solid rgb(31, 25, 25);
+  border-radius: 50%;
+  border-top-color: rgba(198, 182, 159, 255);
+  animation: 1s spinner infinite ease-in-out;
+}
+
+@keyframes spinner{
+  to{
+      transform: rotate(360deg);
+  }
 }
 
 /* STILIZOVANJE HEADERA, FOOTERA I NAVBARA............................................................ */
 
-header{
-    border-bottom: 2px solid rgb(135,124,107);
+header {
+  border-bottom: 2px solid rgb(135, 124, 107);
 }
 
-#headerIndex{
-    background-image: url(assets/images/HEADER3.jpg);
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    width: 100%;
-    height: 737px;
-    text-align: center;
+#headerIndex {
+  background-image: url(assets/images/HEADER3.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  width: 100%;
+  height: 737px;
+  text-align: center;
 }
 
-#naslov{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    width: 100%;
-    height: 50px;
-    /* padding: 5px; OVO JE STVARALO HORIZONTALNI SCROLL BAR */
+#naslov {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  height: 50px;
 }
 
-#hamburgerIcon{
-    margin-left: 10px;
-    font-size: 30px;
-    color: rgba(198,182,159,255);
+#hamburgerIcon {
+  margin-left: 10px;
+  font-size: 30px;
+  color: rgba(198, 182, 159, 255);
 }
 
-#hamburgerIcon:hover{
-    cursor: pointer;
+#hamburgerIcon:hover {
+  cursor: pointer;
 }
 
-#h1Naslov{
-    margin-left: 120px;
-    margin-right: 5px;
-    color: rgba(198,182,159,255);
+#h1Naslov {
+  margin-left: 120px;
+  margin-right: 5px;
+  color: rgba(198, 182, 159, 255);
+  text-decoration: none;
 }
 
-#desktopNavbar{
-    display: none;
-    /* margin-left: 650px; */
+#h1Naslov:focus{
+  color: rgb(135, 124, 107);
 }
 
-#desktopNavbar a{
-    text-decoration: none;
-    color: rgba(198,182,159,255);
-    font-size: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
+#desktopNavbar {
+  display: none;
 }
 
-#desktopNavbar a:hover{
-    transition: 0.5s;
-    color: rgb(135,124,107);
+#desktopNavbar a {
+  text-decoration: none;
+  color: rgba(198, 182, 159, 255);
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-#navbar{
-    background-color: rgb(31, 25, 25);
-    width: 100%;
-    border-top: 2px solid rgba(198,182,159,255);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+#desktopNavbar a:hover {
+  transition: 0.5s;
+  color: rgb(135, 124, 107);
 }
 
-.aNav{
-    color: rgba(198,182,159,255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 30px;
-    background-color:rgb(31, 25, 25);
-    width: 100%;
-    height: 65px;
-    border: none;
+#navbar {
+  background-color: rgb(31, 25, 25);
+  width: 100%;
+  border-top: 2px solid rgba(198, 182, 159, 255);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
+.aNav {
+  color: rgba(198, 182, 159, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
-.aNav:hover{
-    cursor: pointer;
-    transition: 1s;
-    background-color: black;
+  font-size: 30px;
+  background-color: rgb(31, 25, 25);
+  width: 100%;
+  height: 65px;
+  border: none;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 2px solid rgb(135,124,107);
-    background-color: black;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
+.aNav:hover {
+  cursor: pointer;
+  transition: 1s;
+  background-color: black;
+}
+
+#logOut{
+  color: rgba(198, 182, 159, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+  background-color: rgb(31, 25, 25);
+  width: 100%;
+  height: 65px;
+  border: none;
+}
+
+#logOut:hover{
+  cursor: pointer;
+  transition: 1s;
+  background-color: black;
+}
+
+.logOut{
+  font-size: 20px;
+  color: rgba(198, 182, 159, 255);
+  background-color: rgb(31, 25, 25);
+  border: none;
+  margin: 0;
+  height: 50px;
+  
+}
+
+.logOut:hover{
+  cursor: pointer;
+  transition: 1s;
+  color: rgb(31, 25, 25);
+  background-color: rgba(198, 182, 159, 255);
+}
+
+footer {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid rgb(135, 124, 107);
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
 }
 
 /* FEATURED PARAGRAF...................................................................... */
 
-#featuredWrapper{
-    color: rgba(198,182,159,255);
-    background-color: rgb(31, 25, 25);
-    border: 5px solid rgb(135,124,107);
-    border-radius: 25px;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
-    width: 400px;
+#featuredWrapper {
+  color: rgba(198, 182, 159, 255);
+  background-color: rgb(31, 25, 25);
+  border: 5px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 100px;
+  padding: 20px;
+  width: 400px;
 }
 
-#featuredWrapper:hover{
-    cursor: pointer;
-    transition: 00.5s;
-    font-size: 20px;
+#featuredWrapper:hover {
+  cursor: pointer;
+  transition: 00.5s;
+  font-size: 20px;
 }
-
 
 /* Skracivanje paragrafa ukoliko je predugacak za svoj container */
-#featuredParagraf{
-    display: -webkit-box;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
+#featuredParagraf {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
-/* SEARCH DEO.............................. */
 
-#searchWrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    margin-bottom: 40px;
-}
-
-#search{
-    font-size: 20px;
-    height: 40px;
-    width: 400px;
-    border: 4px solid rgb(135,124,107);
-    background-color: rgb(31, 25, 25);
-    border-radius: 25px;
-    color: rgba(198,182,159,255);
-}
-
-#search:focus{
-    outline: none;
-}
-
-#btnSearch{
-    color: rgba(198,182,159,255);
-    font-size: 30px;
-    background-color: rgb(31, 25, 25);
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px; 
-    margin: 10px;
-    width: 200px;
-    height: 60px;
-      
-}
-
-#btnSearch:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    background-color: black;
-}
 /* TRI RANDOM PARAGRAFA..................................................................... */
 
-#randomWrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#randomWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
 }
 
-.random{
-    color: rgba(198,182,159,255);
-    background-color: rgb(31, 25, 25);
-    width: 400px;
-    height: 350px;
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px;
-    margin: 5px;
-    padding: 10px;
-    
+.random {
+  color: rgba(198, 182, 159, 255);
+  background-color: rgb(31, 25, 25);
+  width: 400px;
+  height: 350px;
+  border: 3px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  margin: 5px;
+  padding: 10px;
 }
 
-.random:hover{
-    cursor: pointer;
+.random:hover {
+  cursor: pointer;
 }
 
 /* Skracivanje paragrafa ukoliko je predugacak za svoj container */
-.paragraf{
-    display: -webkit-box;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}    
+
+.shorten {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 
 /* SLIKE U RANDOM PARAGRAFIMA....................................................... */
 
-.randomSlika{
-    width: 400px;
-    height: 200px;
-    
+.randomSlika {
+  width: 400px;
+  height: 200px;
 }
 
-.randomSlika:hover{
-    transition: 0.5s;
-    height: 210px;
+.randomSlika:hover {
+  transition: 0.5s;
+  height: 210px;
 }
 
 /* OPTIONS SEKCIJA................................................. */
 
-#optionsWrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: rgb(31, 25, 25);
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px;
-    margin-top: 50px;
-    width: 400px;
-    height: 100px;
+
+
+#optionsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background-color: rgb(31, 25, 25);
+  border: 3px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
 }
 
-#optionsWrapper:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    font-size: 30px;
-    background-color: black;
+#optionsWrapper:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 30px;
+  background-color: black;
 }
 
-#optionsWrapper a{
-    color: rgba(198,182,159,255);
+#optionsWrapper a {
+  color: rgba(198, 182, 159, 255);
 }
 
 /* BACK TO TOP DUGME........................................... */
 
-#topButton{
-    margin-top: 40px;
+#topButton {
+  margin-top: 40px;
 }
 
-#topButton a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* position: sticky; */
-    margin-bottom: 30px;
-    margin-left: 400px;
-    background-color: rgb(31, 25, 25);
-    border: 2px solid rgb(135,124,107);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 20px;
-    color: rgba(198,182,159,255);
+#topButton a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: sticky; */
+  margin-bottom: 30px;
+  margin-left: 400px;
+  background-color: rgb(31, 25, 25);
+  border: 2px solid rgb(135, 124, 107);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  color: rgba(198, 182, 159, 255);
 }
 
-/* BIBLIOTEKA STRANA STILIZOVANJE...................................................................................................... */
 
 /* ABOUT STRANA STILIZOVANJE...................................................................................................... */
 
-#wrapperAbout{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#wrapperAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    margin: 15px;
-    padding: 10px;
-    background-color: rgb(31, 25, 25);
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+  margin: 15px;
+  padding: 10px;
+  background-color: rgb(31, 25, 25);
+  border: 3px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
-#slikaAbout{
-    margin: 20px;
-    width: 100px;
-    height: 200px;
+#slikaAbout {
+  margin: 20px;
+  width: 100px;
+  height: 200px;
 }
 
 /* KONTAKT STRANA STILIZOVANJE......................................................................................................... */
 
-#kontaktNaslov{
-    text-align: center;
+#kontaktNaslov {
+  text-align: center;
 }
 
-fieldset{
-    background-color: rgb(31, 25, 25);
-    border: 2px solid rgb(135,124,107);
-    border-radius: 25px;
-    height: 500px;
-    margin: 20px;
+fieldset {
+  background-color: rgb(31, 25, 25);
+  border: 2px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  height: 500px;
+  margin: 15px;
 }
 
-#kontaktForma{
-    text-align: center;
-    margin: 10px;
+#kontaktForma {
+  text-align: center;
+  margin: 10px;
 }
 
-#inputText{
-    margin-top: 60px;
-    width: 400px;
-    height: 250px;
-    font-size: 15px;
+.labelContact{
+  font-size: 25px;
 }
 
-#kontaktDugme{
-    color: rgba(198,182,159,255);
-    font-size: 30px;
-    background-color: rgb(31, 25, 25);
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px; 
-    margin-top: 80px;
-    width: 200px;
-    height: 60px;
-}
-
-#kontaktDugme:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    background-color: black;
-}
-
-#slikaKontaktDiv{
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
-#slikaKontakt{
-    width: 90px;
-    height: 210px;
-    margin-bottom: 5px;
-}
-
-#slikaKontaktDiv p{
-    margin-left: 20px;
-    margin-top: 50px;
-    font-size: 20px;
-}
-
-/* REGISTER/LOGIN STRANA STILIZOVANJE......................................................................................................... */
-
-#loginImage{
-    width: 150px;
-    height: 300px;
-    margin-left: 150px;
-}
-
-#wrapperRL{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+.inputContact {
+  font-size: 20px;
+  margin: 10px;
+  width: 300px;
+  height: 25px;
 }
 
 
-#buttonRLdiv h1{
-    text-align: center;
+#inputText {
+  margin-top: 60px;
+  width: 400px;
+  height: 250px;
+  font-size: 15px;
+  resize: none;
 }
 
-.dugmeRL{
-    color: rgba(198,182,159,255);
-    font-size: 30px;
-    background-color: rgb(31, 25, 25);
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px; 
-    margin: 10px;
-    width: 200px;
-    height: 60px;
+#kontaktDugme {
+  color: rgba(198, 182, 159, 255);
+  font-size: 30px;
+  background-color: rgb(31, 25, 25);
+  border: 3px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  margin-top: 5px;
+  width: 200px;
+  height: 60px;
 }
 
-.dugmeRL:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    background-color: black;
+#kontaktDugme:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: black;
 }
 
-#registerForm{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: rgb(31, 25, 25);
-    border: 2px solid rgb(135,124,107);
-    border-radius: 25px;
-    width: 400px;
-    height: 300px;
-    margin-top: 50px;
-    padding: 20px;
+#slikaKontaktDiv {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
-.inputRegLog{
-    font-size: 20px;
-    margin: 10px;
-    width: 300px;
-    height: 25px;
+#slikaKontakt {
+  width: 90px;
+  height: 210px;
+  margin-bottom: 5px;
 }
 
-#buttonReg{
-    color: rgba(198,182,159,255);
-    font-size: 30px;
-    background-color: rgb(31, 25, 25);
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px; 
-    margin: 10px;
-    width: 200px;
-    height: 60px;
+#slikaKontaktDiv p {
+  margin-left: 20px;
+  margin-top: 50px;
+  font-size: 20px;
 }
 
-#buttonReg:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    background-color: black;
+/*LOGIN I REGISTER STRANA STILIZOVANJE......................................................................................................... */
+
+
+
+.wrapperRL {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#registerForm {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background-color: rgb(31, 25, 25);
+  border: 2px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+}
+
+.inputRegLog {
+  font-size: 20px;
+  margin: 10px;
+  width: 300px;
+  height: 25px;
+}
+
+.inputRegLog::placeholder {
+  color: red;
+}
+
+#buttonReg {
+  color: rgba(198, 182, 159, 255);
+  font-size: 30px;
+  background-color: rgb(31, 25, 25);
+  border: 3px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  margin-top: 30px;
+  width: 200px;
+  height: 60px;
+}
+
+#buttonReg:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: black;
 }
 
 /* LOGIN FORMA................................................. */
 
-
-#loginForm{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: rgb(31, 25, 25);
-    border: 2px solid rgb(135,124,107);
-    border-radius: 25px;
-    width: 400px;
-    height: 300px;
-    margin-top: 50px;
-    padding: 20px;
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background-color: rgb(31, 25, 25);
+  border: 2px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
 }
 
-#buttonLog{
-    color: rgba(198,182,159,255);
-    font-size: 30px;
-    background-color: rgb(31, 25, 25);
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px; 
-    margin-top: 40px;
-    width: 200px;
-    height: 40px;
+
+#buttonLog {
+  color: rgba(198, 182, 159, 255);
+  font-size: 30px;
+  background-color: rgb(31, 25, 25);
+  border: 3px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  margin-top: 30px;
+  width: 200px;
+  height: 60px;
 }
 
-#buttonLog:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    background-color: black;
+#buttonLog:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: black;
 }
 
-#btnNazad{
-    color: rgba(198,182,159,255);
-    font-size: 30px;
-    background-color: rgb(31, 25, 25);
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px; 
-    margin-top: 40px;
-    width: 200px;
-    height: 40px;
-}
 
-#btnNazad:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    background-color: black;
-}
 
 
 /* EVENTS STRANA..................................................................... */
 
-#eventCrest{
-    width: 200px;
-    height: 200px;
-    margin-top: 30px;
+.eventCrest {
+  width: 200px;
+  height: 200px;
+  margin-top: 30px;
 }
 
-.eventsHeader{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 40px;
+.eventsHeader {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
 }
 
-#eventWrapper{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.viewDiv {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.eventArticle{
-    color: rgba(198,182,159,255);
-    background-color: rgb(31, 25, 25);
-    width: 400px;
-    height: 350px;
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px;
-    margin: 20px;
-    padding: 10px;
+.checkLabel {
+  font-size: 30px;
 }
 
-.eventArticle:hover{
-    cursor: pointer;
+.checkView {
+  width: 20px;
+  height: 20px;
 }
 
-.colorChange{
-    background-color: #73522c;
-    /* #75401d */
+#eventWrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.eventArticle {
+  color: rgba(198, 182, 159, 255);
+  background-color: rgb(31, 25, 25);
+  width: 400px;
+  height: 350px;
+  border: 3px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.headerEvents {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.eventArticle:hover {
+  cursor: pointer;
+}
+
+.colorChange {
+  background-color: #73522c;
+  /* #75401d */
 }
 
 /* DUGME ZA DODAVANJE */
-#btnAdd{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    color: rgba(198,182,159,255);
-    background-color: rgb(31, 25, 25);
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px;
-    width: 400px;
-    height: 100px;
+#btnAdd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgba(198, 182, 159, 255);
+  background-color: rgb(31, 25, 25);
+  border: 3px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  width: 400px;
+  height: 100px;
 }
 
-#btnAdd:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    font-size: 30px;
-    background-color: black;
+#btnAdd:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 30px;
+  background-color: black;
+}
+
+#pagination-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.pageNumber {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  color: rgba(198, 182, 159, 255);
+  border: none;
+  background-color: black;
+}
+
+.pageNumber:hover {
+  cursor: pointer;
 }
 
 /* FILTER DUGMICI.............. */
 
-#filterBtnWrapper{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+#filterBtnWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.filterBtn{
-    margin: 10px;
-    font-size: 20px;
-    color: rgba(198,182,159,255);
-    background-color: rgb(31, 25, 25);
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px;
-    width: 120px;
-    height: 100px;
+.filterBtn {
+  margin: 10px;
+  font-size: 20px;
+  color: rgba(198, 182, 159, 255);
+  background-color: rgb(31, 25, 25);
+  border: 3px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  width: 120px;
+  height: 100px;
 }
 
-.filterBtn:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    font-size: 25px;
-    background-color: black;
+.filterBtn:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 25px;
+  background-color: black;
 }
-
-
 
 /* LIBRARY STRANA.................................................................. */
 
-#chosenWrapper{
+#chosenWrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btnLib {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgba(198, 182, 159, 255);
+  background-color: rgb(31, 25, 25);
+  border: 3px solid rgb(135, 124, 107);
+  border-radius: 25px;
+  margin-top: 30px;
+  width: 400px;
+  height: 100px;
+}
+
+.btnLib:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 30px;
+  background-color: black;
+}
+
+.btnWrapper {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* MEDIA QUERY ZA DESKTOP........................................................ */
+
+@media only screen and (min-width: 769px) {
+  /* INDEX STRANA................................... */
+
+  #headerIndex {
+    height: 753px;
+  }
+
+  #h1Naslov {
+    margin-left: 20px;
+  }
+
+  #hamburgerIcon {
+    display: none;
+  }
+
+  #desktopNavbar {
+    display: block;
+  }
+
+  #featuredWrapperDesktop {
+    display: flex;
+    justify-content: center;
+  }
+
+  #featuredWrapper {
+    width: 1300px;
+  }
+
+  #randomWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .random {
+    margin: 20px;
+  }
+
+  #topButton {
+    float: right;
+    margin-right: 10px;
+  }
+
+  /* KONTAKT STRANA.................. */
+
+  fieldset {
+    width: 1000px;
+    height: 595px;
+    margin: auto;
+  }
+
+  #kontaktForma {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #kontaktForma label {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  #kontaktForma input {
+    font-size: 20px;
+    width: 400px;
+    height: 20px;
+    margin-top: 10px;
+  }
+
+  #inputText {
+    font-size: 20px;
+    width: 700px;
+    resize: none;
+  }
+
+  #kontaktDugme {
+    margin-top: 15px;
+  }
+
+  /* EVENTS STRANA.............. */
+
+  #eventWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #eventCrest {
+    margin-top: 0px;
+  }
+
+  /* LIBRARY STRANA............... */
+
+  #chosenWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .btnWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
-.btnLib{
+
+/* MEDIA QUERY ZA TABLET......................... */
+
+@media only screen and (min-width: 481px) and (max-width:768px){
+  /* INDEX STRANA.................. */
+
+  #featuredWrapperDesktop{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
-    color: rgba(198,182,159,255);
-    background-color: rgb(31, 25, 25);
-    border: 3px solid rgb(135,124,107);
-    border-radius: 25px;
-    margin-top: 30px;
-    width: 400px;
-    height: 100px;
-}
+  }
 
-.btnLib:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    font-size: 30px;
-    background-color: black;
-}
+  .random{
+    margin: 20px;
+  }
 
+  #topButton{
+    float: right;
+    margin-right: 30px;
+  }
 
-.btnWrapper{
-    margin-top: 70px;
+  /* KONTAKT STRANA............... */
+
+  fieldset{
+    height: 550px;
+  }
+
+  #kontaktForma{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    justify-content: center;
+  }
 
+  #inputText{
+    margin-top: 5px;
+  }
 
-/* MEDIA QUERY ZA DEFSKTOP........................................................ */
-
-@media only screen and (min-width:768px){
-
-    /* INDEX STRANA................................... */
-
-    #headerIndex{
-        height: 753px;
-    }
-
-    #h1Naslov{
-        margin-left: 20px;
-    }
-
-    #hamburgerIcon{
-        display: none;
-    }
-
-    #desktopNavbar{
-        display: block;
-    }
-
-    
-    #featuredWrapperDesktop{
-        display: flex;
-        justify-content: center;
-    }
-    
-    #featuredWrapper{
-        width: 1300px;
-    }
-
-    #randomWrapper{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .random{
-        margin: 20px;
-    }
-
-    #topButton{
-        float: right;
-        margin-right: 10px;
-    }
-
-    /* KONTAKT STRANA.................. */
-
-    fieldset{
-        width: 1000px;
-        height: 595px;
-        margin: auto;
-    }
-
-    #kontaktForma{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #kontaktForma label{
-        font-size: 25px;
-        margin-top: 10px;
-    }
-
-    #kontaktForma input{
-        font-size: 20px;
-        width: 400px;
-        height: 20px;
-        margin-top: 10px;
-    }
-
-    #inputText{
-        font-size: 20px;
-        width: 700px;
-        resize: none;
-    }
-
-    /* EVENTS STRANA.............. */
-
-    #eventWrapper{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    #eventCrest{
-        margin-top: 0px;
-    }
-    
-
-    /* LIBRARY STRANA............... */
-
-    #chosenWrapper{
-        margin-top: 50px;
-        margin-left: 50px;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .btnWrapper{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
+  #kontaktDugme{
+    margin-top: 20px;
+  }
 }
