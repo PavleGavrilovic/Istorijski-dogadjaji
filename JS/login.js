@@ -1,43 +1,55 @@
-var register=document.getElementById("registerForm");
-var login=document.getElementById("loginForm");
-var footer=document.getElementsByTagName("footer")[0];
+document.getElementById("buttonLog").addEventListener("click", loginClient);
 
-var dugmeDa=document.getElementById("buttonYes");
-var dugmeNe=document.getElementById("buttonNo");
-var dugmeNazad=document.getElementById("btnNazad");
+function loginClient() {
+  let email = document.getElementById("userL").value;
+  let password = document.getElementById("passwordL").value;
 
-dugmeNazad.style.display="none";
-register.style.display="none";
-login.style.display="none";
-footer.style.visibility="hidden";
+  let regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  let emailProvera = regexEmail.test(email);
 
+  if (emailProvera) {
+    console.log("Email ok");
+  }
 
-dugmeDa.addEventListener("click",showLog);
-dugmeNe.addEventListener("click",showReg);
-dugmeNazad.addEventListener("click",nazadRegLog);
+  let regexPass = /([^ ]{7,50})/;
+  let passProvera = regexPass.test(password);
 
+  if (passProvera) {
+    console.log("Password ok");
+  }
 
+  if (!emailProvera || !passProvera) {
+    document.getElementById("userL").value = "";
+    document.getElementById("userL").placeholder = "Invalid Email!";
+    document.getElementById("userL").style.cssText =
+      "box-shadow: 0 0 10px red; color: red";
+    document.getElementById("passwordL").value = "";
+    document.getElementById("passwordL").placeholder = "Invalid Password!";
+    document.getElementById("passwordL").style.cssText =
+      "box-shadow: 0 0 10px red; color: red";
+  } else {
+    axios
+      .post("http://localhost:3000/login", {
+        email: email,
+        password: password,
+      })
+      .then(function (response) {
+        console.log(response);
 
-
-
-function showLog(){
-    login.style.display="block";
-    document.getElementById("buttonRLdiv").style.display="none";
-    dugmeNazad.style.display="block";
-    footer.style.visibility="visible";
-}
-
-function showReg(){
-    register.style.display="block";
-    document.getElementById("buttonRLdiv").style.display="none";
-    dugmeNazad.style.display="block";
-    footer.style.visibility="visible";
-}
-
-function nazadRegLog(){
-    register.style.display="none";
-    login.style.display="none";
-    document.getElementById("buttonRLdiv").style.display="block";
-    dugmeNazad.style.display="none";
-    footer.style.visibility="hidden";
+        if (
+          response.data.result == "INVALID CREDENTIALS" ||
+          response.data.result == "NO SUCH EMAIL IN THE DATABASE"
+        ) {
+          localStorage.removeItem("userData");
+          alert(response.data.result);
+        } else {
+          localStorage.setItem("userData", JSON.stringify(response.data.data));
+          alert(response.data.result);
+          window.location.href = "index.html";
+        }
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
 }
