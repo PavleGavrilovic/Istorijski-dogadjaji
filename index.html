@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Istorijski dogadjaji</title>
+    <title>Historical Events</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/images/earthFav.png" type="image/x-icon">
     <script src="JS/jquery-3.6.0.min.js"></script>
@@ -13,27 +13,38 @@
 </head>
 
 <body>
+    <div id="spinnerWrapper">
+        <div id="spinner"></div>
+    </div>
+    
     <a id="sidro"></a>
     <header id="headerIndex">
+        
         <div id="naslov">
             <div id="hamburgerIcon">&#9776;</div>
-            <div id="h1Naslov"><h1>HISTORICAL EVENTS</h1></div>
+            
+            <a href="index.html" id="h1Naslov"><h1>HISTORICAL EVENTS</h1></a>
             <span id="desktopNavbar">
                 <a href="events.html" >Events</a>
                 <a href="biblioteka.html" >My Library</a>
-                <a href="login.html" >Log In</a>
+                <a href="login.html" id="linkLog">Log In</a>
+                <a href="register.html" id="linkReg" >Register</a>
                 <a href="about.html" >About</a>
                 <a href="kontakt.html" >Contact</a>
+                <button class="logOut">Log Out</button>
             </span>
+            
         </div>
         
 
         <div id="navbar">
             <a href="events.html" class="aNav">Events</a>
             <a href="biblioteka.html" class="aNav">My Library</a>
-            <a href="login.html" class="aNav">Log In</a>
+            <a href="login.html" class="aNav" id="mobileLog">Log In</a>
+            <a href="register.html" class="aNav" id="mobileReg">Register</a>
             <a href="about.html" class="aNav">About</a>
             <a href="kontakt.html" class="aNav">Contact</a>
+            <button class="logOut aNav">Log Out</button>
         </div>
     </header>
 
@@ -41,14 +52,8 @@
         
     <div id="featuredWrapperDesktop"></div>
     
-        <div id="searchWrapper">
-            <input type="text" name="search" id="search">
-            <button id="btnSearch">Search</button>
-        </div>
-    
-        
-
     <section>
+        <h2 class="sectionH">Featured Articles</h2>
         <div id="randomWrapper">
             <div id="prvi" class="random"></div>
             <div id="drugi" class="random"></div>
@@ -57,6 +62,7 @@
     </section>
 
     <section>
+        <h2 class="sectionH">Would you like to create your own Library?</h2>
         <div id="optionsWrapper">
             <a href="events.html">CREATE LIBRARY</a>
         </div>
@@ -70,7 +76,14 @@
 
     </main>
 
-    <footer>Copyright and stuff</footer>
+    
+
+    <footer>
+        <p>&#169;2021 Pavle Gavrilovic</p>
+        
+    </footer>
+
+    
 
     <script src="JS/main.js"></script>
     <script src="JS/index.js"></script>
