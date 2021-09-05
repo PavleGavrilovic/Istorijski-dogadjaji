@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/earthFav.png" type="image/x-icon">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="spinnerWrapper">
+        <div id="spinner"></div>
+    </div>
+    <header>
+        <div id="naslov">
+            <div id="hamburgerIcon">&#9776;</div>
+            <a href="index.html" id="h1Naslov"><h1>HISTORICAL EVENTS</h1></a>
+            <span id="desktopNavbar">
+                <a href="index.html" >Home Page</a>
+                <a href="events.html" >Events</a>
+                <a href="biblioteka.html" >My Library</a>
+                <a href="login.html" >Log In</a>
+                <a href="about.html" >About</a>
+                <a href="kontakt.html" >Contact</a>
+            </span>
+                
+        </div>
+
+        <div id="navbar">
+            <a href="index.html" class="aNav">Home Page</a>
+            <a href="events.html" class="aNav">Events</a>
+            <a href="biblioteka.html" class="aNav">My Library</a>
+            <a href="login.html" class="aNav">Log In</a>
+            <a href="about.html" class="aNav">About</a>
+            <a href="kontakt.html" class="aNav">Contact</a>
+        </div>
+    </header>
+    <main>
+        <div class="wrapperRL">
+            <div id="registerForm">
+                <label for="user">Email:</label>
+                <input type="text" class="inputRegLog" id="user">
+                <label for="password">Password:</label>
+                <input type="text" class="inputRegLog" id="password">
+                <label for="confirm">Confirm Password:</label>
+                <input type="text" class="inputRegLog" id="confirm">
+            </div>
+            <button id="buttonReg">Register</button>
+        </div>
+    
+    </main>
+    <footer>
+        <p>&#169;2021 Pavle Gavrilovic</p>
+    </footer>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/register.js"></script>
+</body>
+</html>
