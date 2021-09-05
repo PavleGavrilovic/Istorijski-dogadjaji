@@ -8,15 +8,14 @@ fetch("https://raw.githubusercontent.com/PavleGavrilovic/Istorijski-dogadjaji/ma
 })
 
 
-// INDEX STRANA...................................................................................
 
 // POPUNJAVANJE TRI RANDOM CLANKA I FEATURED CLANKA DOHVATANJEM IZ JSON FAJLA.....................
 
 function displayFeaturedData(data){
-    var today=new Date();
-    var todayString=today.toString();
-    var todayStringSplit=todayString.split(" ");
-    var day=todayStringSplit[1] + " " + todayStringSplit[2];
+    let today=new Date();
+    let todayString=today.toString();
+    let todayStringSplit=todayString.split(" ");
+    let day=todayStringSplit[1] + " " + todayStringSplit[2];
 
     let text;
 
@@ -51,21 +50,21 @@ function displayRandomData(data){
 
     let text=`
     <div id="prvi" class="random">
-        <h3>${shuffleData[0].title}</h3>
+        <h3 class="headerEvents">${shuffleData[0].title}</h3>
         <img src="${shuffleData[0].image}" alt="img1" class="randomSlika">
-        <p class="paragraf">${shuffleData[0].text}</p>
+        <p class="paragraf shorten">${shuffleData[0].text}</p>
     </div>
 
     <div id="drugi" class="random">
-        <h3>${shuffleData[5].title}</h3>
+        <h3 class="headerEvents">${shuffleData[5].title}</h3>
         <img src="${shuffleData[5].image}" alt="img1" class="randomSlika">
-        <p class="paragraf">${shuffleData[5].text}</p>
+        <p class="paragraf shorten">${shuffleData[5].text}</p>
     </div>
 
     <div id="treci" class="random">
-        <h3>${shuffleData[6].title}</h3>
+        <h3 class="headerEvents">${shuffleData[6].title}</h3>
         <img src="${shuffleData[6].image}" alt="img1" class="randomSlika">
-        <p class="paragraf">${shuffleData[6].text}</p>
+        <p class="paragraf shorten">${shuffleData[6].text}</p>
     </div>
     `;
     return text;
