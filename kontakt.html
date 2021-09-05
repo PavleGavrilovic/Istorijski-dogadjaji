@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/images/earthFav.png" type="image/x-icon">
     <script src="JS/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <div id="spinnerWrapper">
+        <div id="spinner"></div>
+    </div>
     <a id="sidro"></a>
     <header>
         <div id="naslov">
             <div id="hamburgerIcon">&#9776;</div>
-            <div id="h1Naslov"><h1>HISTORICAL EVENTS</h1></div>
+            <a href="index.html" id="h1Naslov"><h1>HISTORICAL EVENTS</h1></a>
             <span id="desktopNavbar">
                 <a href="index.html">Home Page</a>
                 <a href="events.html" >Events</a>
                 <a href="biblioteka.html" >My Library</a>
                 <a href="login.html" >Log In</a>
+                <a href="register.html">Register</a>
                 <a href="about.html" >About</a>
             </span>
                 
@@ -31,6 +35,7 @@
            <a href="events.html" class="aNav">Events</a>
             <a href="biblioteka.html" class="aNav">My Library</a>
             <a href="login.html" class="aNav">Log In</a>
+            <a href="register.html" class="aNav">Register</a>
             <a href="about.html" class="aNav">About</a>
         </div>
     </header>
@@ -41,10 +46,10 @@
    
         <fieldset>
             <form action="#" method="POST" id="kontaktForma">
-                <label for="fname">Name:</label>
-                <input type="text" id="fname">
-                <label for="email">Email:</label>
-                <input type="email" id="email"><br>
+                <label for="fname" class="labelContact">Name:</label>
+                <input type="text" id="fname" class="inputContact">
+                <label for="email" class="labelContact">Email:</label>
+                <input type="email" id="email" class="inputContact"><br>
                 <textarea id="inputText" placeholder="Write your message here..."></textarea>
                 <button id="kontaktDugme">Send</button>
             </form>
@@ -57,7 +62,10 @@
     
     </main>
     
-    <footer>Copyright and stuff</footer>
+    <footer>
+        <p>&#169;2021 Pavle Gavrilovic</p>
+        
+    </footer>
     <script src="JS/main.js"></script>
 </body>
 </html>
