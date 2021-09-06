@@ -94,7 +94,7 @@ function buildLayout() {
   let myList = dataP.info;
 
   for (var i = 1 in myList) {
-      //Keep in mind we are using "Template Litterals to create rows"
+      
       let row = `
       <div class="eventArticle" data-id="${myList[i].id}" data-year="${myList[i].year}">
                <h3 class="headerEvents">${myList[i].title}</h3>
