@@ -10,12 +10,6 @@ let clickedArray = [];
 let storageArr = JSON.parse(localStorage.getItem("arr"));
 
 
-things = storageArr.filter(
-  (thing, index, self) =>
-    index ===
-    self.findIndex((t) => t.place === thing.place && t.name === thing.name)
-);
-
 
 // ISPISIVANJE DOGADJAJA...........................................................................
 
