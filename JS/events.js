@@ -549,6 +549,9 @@ document.getElementById("btnAddMore").addEventListener("click", AddData);
         $(".eventArticle").css("width","fit-content").css("height","fit-content");
       } else {
           $(".paragraf").addClass("shorten");
-          $(".eventArticle").css("width","initial").css("height","initial")
+          $(".eventArticle").css("width","initial").css("height","initial");
+        if ($(window).width() >= 769) {
+            $(".eventArticle").css("width","400px").css("height","350px");
+         }
       }
     });
