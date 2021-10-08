@@ -192,6 +192,9 @@ $(".checkView").change(function () {
   } else {
     $(".paragraf").addClass("shorten");
     $(".eventArticle").css("width", "initial").css("height", "initial");
+    if ($(window).width() >= 769) {
+            $(".eventArticle").css("width","400px").css("height","350px");
+         }
   }
 });
 
