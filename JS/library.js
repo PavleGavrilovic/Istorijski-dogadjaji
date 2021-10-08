@@ -191,7 +191,7 @@ $(".checkView").change(function () {
     $(".eventArticle").css("width", "fit-content").css("height", "fit-content");
   } else {
     $(".paragraf").addClass("shorten");
-    $(".eventArticle").css("width", "400px").css("height", "350px");
+    $(".eventArticle").css("width", "initial").css("height", "initial");
   }
 });
 
